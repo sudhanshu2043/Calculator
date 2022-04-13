@@ -1,0 +1,102 @@
+.navbar{
+    background-color: rgb(27, 17, 27);
+    width:100%;
+    height: auto;
+}
+#welcome{
+float: right;
+
+            font-family: serif;
+            color:white;
+          
+            animation: animate 
+                1.5s linear infinite;
+}
+@keyframes animate {
+    10% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#time{
+    float: right;
+    color: white;
+}
+.div2{width:cover;
+    text-align: center;
+    margin-top:23px
+  
+}
+
+body{background-color: rgb(43, 17, 43);
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;}
+/*calcucater*/
+.calculator{
+    border: 8px solid #cedb11;
+    text-align:left;
+    padding: 23px;
+    border-radius: 53px;
+    display: inline-block;
+}.calculaterhead{
+    
+    color: red;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 220px;}
+    
+  }
+ 
+  
+.created{
+    color: white;
+    padding-left:360px ;
+}
+
+    input[type="button"]
+    {
+    border-radius: 10px;
+    font-size: 40px;
+    color: black;
+    border-color:#ff4456 ;
+    width: 102px;
+    height: 60px;
+    margin: 6px;
+    }
+    #edu
+    {
+    border-radius: 10px;
+    text-align: right;
+    background-color:white;
+    border-color: black ;
+    font-size:34px;
+    height: 65px;
+    width: 456px;
+    }
+
+
+.rowfooter{ color: white;
+}
+
+    
+
+.copyright{float: right;
+margin-right:15px;
+padding-right: 10px;
+color: white;
+font-size: 13px; 
+}
+hr{background-color: white;}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculater.css">
+  </head>
+  <body >
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <h2 id="welcome">WELCOME  TO CALCULATOR WORLD</h2> 
+            <h3 id="date"></h3>
+            <h3 id="time"></h3>
+        </div>
+      </nav>
+      <hr>
+     
+      <div class="div2">
+        <div class="calculator">
+     <h2 class="calculaterhead">APNA CALCULATOR</h2>
+        <table border="1" class="table1">
+          <caption class="created">Design BY ANKUR KUMAR.</caption>
+          <tr>
+          <td><input type="button" value="c" onclick="clr()"/> </td>
+          <td colspan="3"><input type="text" id="edu"/></td>
+          
+          </tr>
+          <tr>
+          
+          <td><input type="button" value="+" onclick="dis('+')"/> </td>
+          <td><input type="button" value="1" onclick="dis('1')"/> </td>
+          <td><input type="button" value="2" onclick="dis('2')"/> </td>
+          <td><input type="button" value="3" onclick="dis('3')"/> </td>
+          </tr>
+          <tr>
+          <td><input type="button" value="-" onclick="dis('-')"/> </td>
+          <td><input type="button" value="4" onclick="dis('4')"/> </td>
+          <td><input type="button" value="5" onclick="dis('5')"/> </td>
+          <td><input type="button" value="6" onclick="dis('6')"/> </td>
+          </tr>
+          <tr>
+          <td><input type="button" value="*" onclick="dis('*')"/> </td>
+          <td><input type="button" value="7" onclick="dis('7')"/> </td>
+          <td><input type="button" value="8" onclick="dis('8')"/> </td>
+          <td><input type="button" value="9" onclick="dis('9')"/> </td>
+          </tr>
+          <tr>
+          <td><input type="button" value="/" onclick="dis('/')"/> </td>
+          <td><input type="button" value="." onclick="dis('.')"/> </td>
+          <td><input type="button" value="0" onclick="dis('0')"/> </td>
+          <!-- Evaluating function call eval()-->
+          <td><input type="button" value="=" onclick="solve()"/> </td>
+          </tr>
+          </table>
+        </div>
+  </div>
+      
+      <hr>
+      <div class="container-fluid rowfooter">
+        
+            <div class="row rowfooter" >
+              <div class="col-lg-3">
+                <div>
+                  <h3> YOUR FEEDBACK!</h3>
+               <form action="https://script.google.com/macros/s/AKfycbwlXspVWcLVDDs59QrALqVAe1bQMWH57C7501CFtyBb0ZnjhNJf8b0J4WobJmobQZAU/exec" class="form_feed" id="googlesheet" method="post">
+                 <input type="text"  name="Name" placeholder="NAME"><br>
+                 <input type="email" name="Email_id" placeholder="email id"><br>
+                 <input type="number"  name="Contact_number" placeholder="contact number"><br>
+                 <textarea  cols="20" rows="2"  name="review" placeholder="write review"></textarea>
+                 <button  class="btn btn-primary">submit</button>
+                </form></div>
+                 
+              </div>
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                
+              </div>
+          
+                   
+                    <div class="col-lg-3">
+                        <div class="address">
+                            <h3>My Address</h3>
+                            <p> ANKUR Store WEBPAGE Designer ,<br>
+
+                             D.P.S School near K.T.M showroom kankarbagh,<br>
+
+                             Parvati Bhavan 2nd floor<br>
+
+                             Patna ,800020<br>
+
+                             Bihar, India <br>
+                             Telephone:7667782140<br>
+                             Email: <a href="mailto:sandyankurkumar@gmail.com">sandyankurkumar@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+  </div>
+     </div>
+     <hr>
+     <p class="copyright ">copyright &copy;2022 Ankur.All rights reserved</p>
+     <script>
+      //function for displaying values
+      function dis(val)
+      {
+      document.getElementById("edu").value+=val
+       }
+      //function for evaluation
+      function solve()
+      {
+      let x = document.getElementById("edu").value
+      let y = eval(x)
+      document.getElementById("edu").value = y
+      }
+      //function for clearing the display
+      function clr()
+      {
+      document.getElementById("edu").value = ""
+      }
+      </script>
+    
+      <script>
+        var clock= setInterval(clocktiming,1000);
+        function clocktiming()
+        {
+
+            var t=new Date();
+            var t1=t.toLocaleTimeString();
+            var t2=t.toLocaleDateString();
+
+            document.getElementById('time').innerHTML=t1 + '<br>'+t2 ;
+        }
+        
+      </script>
+         
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
